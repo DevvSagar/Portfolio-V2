@@ -1,0 +1,25 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Specifically allow major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Canonical Host
+Host: https://devvx.in
+
+# Sitemaps
+Sitemap: https://devvx.in/sitemap.xml

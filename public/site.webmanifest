@@ -1,0 +1,22 @@
+{
+  "name": "Sagar | Backend Software Engineer",
+  "short_name": "Sagar",
+  "description": "Backend Software Engineer specializing in Python, Go, FastAPI, distributed systems, high-concurrency microservices, and DSA.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#172b4d",
+  "theme_color": "#172b4d",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/og-image.png",
+      "sizes": "1376x768",
+      "type": "image/png"
+    }
+  ]
+}

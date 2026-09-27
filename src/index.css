@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-padding-top: 5.5rem;
+  -webkit-overflow-scrolling: touch;
+  overflow-anchor: none;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-anchor: none;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #12233f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a436f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4b5c;
+}
+
+/* Subtle glow effects */
+.glow-accent {
+  box-shadow: 0 0 25px -5px rgba(255, 75, 92, 0.35);
+}
+
+.glow-card {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+/* Vertical text orientation */
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+/* Custom animation delays */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Snoring "zzzzzz" goes up animation - Silky Smooth Organic Drift */
+@keyframes snoreFloatSmooth {
+  0% {
+    transform: translate(0px, 0px) scale(0.45);
+    opacity: 0;
+  }
+  18% {
+    opacity: 0.95;
+    transform: translate(4px, -16px) scale(0.75);
+  }
+  45% {
+    opacity: 0.9;
+    transform: translate(12px, -42px) scale(1.05);
+  }
+  75% {
+    opacity: 0.6;
+    transform: translate(22px, -70px) scale(1.3);
+  }
+  100% {
+    transform: translate(30px, -100px) scale(1.55);
+    opacity: 0;
+  }
+}
+
+.snore-z {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: snoreFloatSmooth 3.6s cubic-bezier(0.33, 1, 0.68, 1) infinite;
+  filter: drop-shadow(0 0 3px rgba(56, 189, 248, 0.8));
+  will-change: transform, opacity;
+}
+
+.snore-z-1 {
+  font-size: 13px;
+  animation-delay: 0s;
+}
+
+.snore-z-2 {
+  font-size: 18px;
+  animation-delay: 0.9s;
+}
+
+.snore-z-3 {
+  font-size: 24px;
+  animation-delay: 1.8s;
+}
+
+.snore-z-4 {
+  font-size: 30px;
+  animation-delay: 2.7s;
+}
+
+/* Sleepy cute breathing bubble near nose */
+@keyframes sleepBubblePulse {
+  0%, 100% {
+    transform: scale(0.65);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+}
+
+.sleep-bubble {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: sleepBubblePulse 3.6s ease-in-out infinite;
+}
+
+/* Developer sleeping gentle breathing */
+@keyframes sleepingBreath {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(2.5px);
+  }
+}
+
+.developer-sleeping-breath {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+  animation: sleepingBreath 3.6s ease-in-out infinite;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Clean Terminal Typewriter Cursor Blink */
+@keyframes cursorBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-cursor-blink {
+  animation: cursorBlink 0.9s steps(1) infinite;
+}
+
