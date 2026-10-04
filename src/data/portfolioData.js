@@ -276,7 +276,7 @@ export const experienceData = [
     company: "Growigh",
     type: "Internship",
     duration: "Jul 2026 - Present",
-    period: "3 mos",
+    period: "4 mos",
     location: "Greater Bengaluru Area · Remote",
     logoColor: "bg-[#eab308]",
     logoLetter: "G",
